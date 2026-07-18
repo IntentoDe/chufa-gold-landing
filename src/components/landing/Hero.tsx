@@ -76,7 +76,8 @@ export function Hero() {
               className="h-full w-full object-cover"
               width={1440}
               height={912}
-              priority="true"
+              loading="eager"
+              fetchPriority="high"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-earth-900/20 via-transparent to-transparent" />
           </div>
