@@ -19,7 +19,7 @@ export function Hero() {
         >
           <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
             <Leaf className="h-4 w-4" />
-            <span>Denominación de Origen Valencia</span>
+            <span>Xufes Pastor · de lo bueno lo mejor</span>
           </div>
 
           <h1 className="text-balance text-5xl font-semibold leading-[1.1] tracking-tight text-earth-900 sm:text-6xl lg:text-7xl">
@@ -59,7 +59,7 @@ export function Hero() {
             </div>
             <div className="h-10 w-px bg-earth-300" />
             <div>
-              <p className="text-2xl font-semibold text-earth-900">DOP</p>
+              <p className="text-2xl font-semibold text-earth-900">DO</p>
               <p>Origen garantizado</p>
             </div>
           </div>

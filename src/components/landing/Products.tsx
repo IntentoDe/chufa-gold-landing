@@ -12,7 +12,7 @@ const products = [
     image: productImage,
     description:
       "Selección extra de chufa seca de Valencia, crujiente y con su dulzor característico. Ideal para picar entre horas o añadir a ensaladas y postres.",
-    features: ["Bolsa de 500 g", "Sin aditivos", "Origen DOP Valencia"],
+    features: ["Bolsa de 500 g", "Sin aditivos", "Origen DO Valencia"],
     badge: "Más vendido",
   },
   {
