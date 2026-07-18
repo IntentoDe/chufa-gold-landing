@@ -10,21 +10,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Chufa de Valencia | El oro de la huerta mediterránea",
+        title: "Xufes Pastor | Chufa de Valencia — de lo bueno lo mejor",
       },
       {
         name: "description",
         content:
-          "Descubre la Chufa de Valencia: historia, beneficios para la salud y productos artesanales de tigernut con Denominación de Origen.",
+          "Descubre la Chufa de Valencia de Xufes Pastor: historia, beneficios para la salud y productos artesanales de tigernut con Denominación de Origen.",
       },
       {
         property: "og:title",
-        content: "Chufa de Valencia | El oro de la huerta mediterránea",
+        content: "Xufes Pastor | Chufa de Valencia — de lo bueno lo mejor",
       },
       {
         property: "og:description",
         content:
-          "Descubre la Chufa de Valencia: historia, beneficios para la salud y productos artesanales con Denominación de Origen.",
+          "Descubre la Chufa de Valencia de Xufes Pastor: historia, beneficios para la salud y productos artesanales con Denominación de Origen.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
