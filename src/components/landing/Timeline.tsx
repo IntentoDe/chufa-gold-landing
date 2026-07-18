@@ -46,9 +46,7 @@ export function Timeline() {
 
   return (
     <section id="proceso" className="relative overflow-hidden bg-cream-100 py-24 lg:py-32">
-      <div className="absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-cream-400 to-transparent" />
-
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <div
           ref={headerRef}
           className={`mx-auto max-w-2xl text-center ${headerVisible ? "reveal-visible" : ""} reveal`}
@@ -68,28 +66,37 @@ export function Timeline() {
           ref={timelineRef}
           className={`relative mt-16 lg:mt-24 ${timelineVisible ? "reveal-visible" : ""} reveal`}
         >
+          {/* Center line - desktop */}
           <div className="absolute left-8 top-0 h-full w-0.5 bg-cream-400 lg:left-1/2 lg:-translate-x-px" />
 
-          <div className="space-y-12 lg:space-y-16">
+          <div className="space-y-10 lg:space-y-0">
             {steps.map((step, index) => {
               const isEven = index % 2 === 0;
               return (
                 <div
                   key={step.title}
-                  className={`relative grid grid-cols-1 items-center gap-6 lg:grid-cols-2 ${
+                  className={`relative grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-16 ${
                     timelineVisible ? "reveal-visible" : ""
                   } reveal stagger-${Math.min(index + 1, 5)}`}
                 >
+                  {/* Mobile: content always on right of line */}
+                  {/* Desktop: alternating sides */}
                   <div
-                    className={`pl-20 lg:pl-0 ${isEven ? "lg:pr-16 lg:text-right" : "lg:order-2 lg:pl-16 lg:text-left"}`}
+                    className={`pl-20 lg:pl-0 ${
+                      isEven
+                        ? "lg:pr-16 lg:text-right"
+                        : "lg:order-2 lg:pl-16 lg:text-left"
+                    }`}
                   >
                     <div
-                      className={`inline-flex items-center gap-3 ${isEven ? "lg:flex-row-reverse" : ""}`}
+                      className={`flex items-center gap-3 ${
+                        isEven ? "lg:justify-end" : "lg:justify-start"
+                      }`}
                     >
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/20">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/20">
                         <step.icon className="h-5 w-5" />
                       </span>
-                      <span className="text-sm font-semibold uppercase tracking-widest text-primary">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-primary">
                         Paso {index + 1}
                       </span>
                     </div>
@@ -99,17 +106,15 @@ export function Timeline() {
                     <p className="mt-2 leading-relaxed text-earth-600">{step.description}</p>
                   </div>
 
+                  {/* Timeline dot */}
                   <div
-                    className={`absolute left-8 top-0 h-5 w-5 -translate-x-1/2 rounded-full border-4 border-cream-100 bg-primary lg:left-1/2 ${isEven ? "lg:order-1" : ""}`}
+                    className={`absolute left-8 top-6 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-cream-100 bg-primary lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 ${
+                      isEven ? "lg:order-1" : ""
+                    }`}
                   />
 
-                  <div
-                    className={`hidden pl-20 lg:block lg:pl-0 ${isEven ? "lg:order-2 lg:pl-16" : "lg:pr-16"}`}
-                  >
-                    <div
-                      className={`h-32 rounded-2xl border border-cream-400/50 bg-cream-50/80 bg-[radial-gradient(circle_at_top_right,theme(colors.primary/5%),transparent_50%)] ${isEven ? "" : ""}`}
-                    />
-                  </div>
+                  {/* Empty second column for alternating layout on desktop */}
+                  <div className={`hidden lg:block ${isEven ? "lg:order-2" : "lg:order-1"}`} />
                 </div>
               );
             })}
