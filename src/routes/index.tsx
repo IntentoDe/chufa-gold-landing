@@ -1,24 +1,45 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/landing/Hero";
+import { History } from "@/components/landing/History";
+import { Products } from "@/components/landing/Products";
+import { Timeline } from "@/components/landing/Timeline";
+import { Footer } from "@/components/landing/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      {
+        title: "Chufa de Valencia | El oro de la huerta mediterránea",
+      },
+      {
+        name: "description",
+        content:
+          "Descubre la Chufa de Valencia: historia, beneficios para la salud y productos artesanales de tigernut con Denominación de Origen.",
+      },
+      {
+        property: "og:title",
+        content: "Chufa de Valencia | El oro de la huerta mediterránea",
+      },
+      {
+        property: "og:description",
+        content:
+          "Descubre la Chufa de Valencia: historia, beneficios para la salud y productos artesanales con Denominación de Origen.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <History />
+      <Products />
+      <Timeline />
+      <Footer />
+    </main>
   );
 }
