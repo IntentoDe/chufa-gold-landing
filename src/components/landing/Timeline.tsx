@@ -18,13 +18,13 @@ const steps = [
     icon: Shovel,
     title: "Recolección",
     description:
-      "En noviembre, cuando la planta ha madurado, se arranca la chufa de la tierra con cuidado para no dañar el tubérculo.",
+      "En noviembre, cuando la planta ha madurado, se recoge la chufa de la tierra con cuidado para no dañar el tubérculo.",
   },
   {
     icon: Wind,
-    title: "Lavado y selección",
+    title: "Lavado",
     description:
-      "Se limpia con agua, se eliminan restos de tierra y se seleccionan manualmente los mejores ejemplares.",
+      "Se limpia con agua, se eliminan restos de tierra, paja y piedras que puedan haber llegado del campo.",
   },
   {
     icon: Sun,
@@ -34,9 +34,9 @@ const steps = [
   },
   {
     icon: Package,
-    title: "Envasado artesanal",
+    title: "Selección y envasado artesanal",
     description:
-      "Finalmente se envasan respetando su origen DOP para llegar a tu mesa con todo su sabor y propiedades.",
+      "Finalmente se seleccionan manualmente los mejores ejemplares y se envasan respetando su origen DO para llegar a tu mesa con todo su sabor y propiedades.",
   },
 ];
 
