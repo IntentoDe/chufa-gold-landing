@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Chufa de Valencia | El oro de la huerta mediterránea" },
-      { name: "description", content: "Descubre la Chufa de Valencia: el oro de la huerta. Historia, beneficios para la salud y productos artesanales de tigernut con Denominación de Origen." },
-      { name: "author", content: "Chufa de Valencia" },
-      { property: "og:title", content: "Chufa de Valencia | El oro de la huerta mediterránea" },
-      { property: "og:description", content: "Descubre la Chufa de Valencia: historia, beneficios para la salud y productos artesanales con Denominación de Origen." },
+      { title: "Xufes Pastor | Chufa de Valencia — de lo bueno lo mejor" },
+      { name: "description", content: "Descubre la Chufa de Valencia de Xufes Pastor: el oro de la huerta. Historia, beneficios para la salud y productos artesanales de tigernut con Denominación de Origen." },
+      { name: "author", content: "Xufes Pastor" },
+      { property: "og:title", content: "Xufes Pastor | Chufa de Valencia — de lo bueno lo mejor" },
+      { property: "og:description", content: "Descubre la Chufa de Valencia de Xufes Pastor: historia, beneficios para la salud y productos artesanales con Denominación de Origen." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@chufadevalencia" },
+      { name: "twitter:site", content: "@xufespastor" },
     ],
     links: [
       {

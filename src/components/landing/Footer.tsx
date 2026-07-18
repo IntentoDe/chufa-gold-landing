@@ -10,8 +10,9 @@ export function Footer() {
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                 <Leaf className="h-5 w-5" />
               </div>
-              <span className="font-display text-2xl font-semibold">Chufa de Valencia</span>
+              <span className="font-display text-2xl font-semibold">Xufes Pastor</span>
             </div>
+            <p className="mt-2 text-sm italic text-cream-300">de lo bueno lo mejor</p>
             <p className="mt-4 max-w-md leading-relaxed text-cream-400">
               El oro de la huerta mediterránea. Tradición, sabor y bienestar en cada tubérculo,
               cultivado con respeto por nuestro territorio.
@@ -58,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-cream-800 pt-8 text-sm text-cream-400 lg:flex-row">
-          <p>&copy; {new Date().getFullYear()} Chufa de Valencia. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Xufes Pastor. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <a href="#" className="transition-colors hover:text-cream-100">
               Política de privacidad
