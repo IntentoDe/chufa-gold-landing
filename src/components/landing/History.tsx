@@ -81,7 +81,7 @@ export function History() {
             </div>
           </div>
 
-          <div className="relative">
+          <div id="beneficios" className="relative scroll-mt-24">
             <div className="absolute -right-6 top-0 h-72 w-72 rounded-full bg-primary/5 blur-3xl" />
             <div className="relative rounded-3xl border border-cream-400/50 bg-cream-50 p-8 shadow-xl lg:p-10">
               <h3 className="text-2xl font-semibold text-earth-900">Beneficios para la salud</h3>
