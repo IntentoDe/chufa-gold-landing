@@ -7,7 +7,7 @@ export function Hero() {
   const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-cream-100">
+    <section id="inicio" className="relative min-h-screen overflow-hidden bg-cream-100">
       <div className="grain absolute inset-0" />
 
       <div className="relative mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center gap-8 px-6 py-24 lg:grid-cols-2 lg:gap-12 lg:py-0">
